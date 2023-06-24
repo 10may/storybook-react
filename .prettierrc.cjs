@@ -12,23 +12,28 @@ module.exports = {
 
     importOrderParserPlugins: ['classProperties', 'typescript', 'jsx'],
     importOrder: [
-        '^@/assets/(.*)$',
-        '^@/components/(.*)$',
-        '^@/features/(.*)$',
-        '^@/utils/(.*)$',
+        '^~assets/(.*)$',
+        '^~/assets/(.*)$',
+        '^~components/(.*)$',
+        '^~/components/(.*)$',
+        '^~features/(.*)$',
+        '^~/features/(.*)$',
+        '^~utils/(.*)$',
+        '^~/utils/(.*)$',
         '^[../]',
         '^[./]',
     ],
     importOrderSeparation: true,
     importOrderSortSpecifiers: true,
     importOrderCaseInsensitive: true,
-    // plugins: [
-    //     require.resolve('@trivago/prettier-plugin-sort-imports'),
-    //     require.resolve('prettier-plugin-tailwindcss'),
-    // ],
+    plugins: [
+        require.resolve('@trivago/prettier-plugin-sort-imports'),
+        require.resolve('prettier-plugin-tailwindcss'),
+    ],
 };
 
 /*
     ni -D prettier \
-    @trivago/prettier-plugin-sort-imports
+    @trivago/prettier-plugin-sort-imports \
+    prettier-plugin-tailwindcss
 */

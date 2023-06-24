@@ -19,6 +19,8 @@ module.exports = {
         'plugin:import/recommended',
         'plugin:import/typescript',
 
+        'plugin:tailwindcss/recommended',
+
         'prettier',
     ],
 
@@ -52,6 +54,14 @@ module.exports = {
         // React
         'react/prop-types': 'off',
         'react-refresh/only-export-components': 'warn',
+
+        // tailwind
+        'tailwindcss/no-custom-classname': [
+            'warn',
+            {
+                callees: ['classnames', 'clsx', 'ctl', 'tv'],
+            },
+        ],
 
         // import
         'import/default': 'warn',
@@ -125,5 +135,6 @@ module.exports = {
   eslint-plugin-import@npm:eslint-plugin-i \
   eslint-plugin-react \
   eslint-plugin-react-hooks \
-  eslint-plugin-unused-imports
+  eslint-plugin-unused-imports \
+  eslint-plugin-tailwindcss
 */
