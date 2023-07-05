@@ -19,14 +19,14 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
     args: {
-        variant: 'default',
         children: 'Button',
     },
 };
 
-export const Destructive: Story = {
+export const Disabled: Story = {
     args: {
-        variant: 'destructive',
+        disabled: true,
+        variant: 'default',
         children: 'Button',
     },
 };
@@ -62,6 +62,12 @@ export const Link: Story = {
 export const Small: Story = {
     args: {
         size: 'sm',
+        children: 'Button',
+    },
+};
+export const Regular: Story = {
+    args: {
+        size: 'regular',
         children: 'Button',
     },
 };

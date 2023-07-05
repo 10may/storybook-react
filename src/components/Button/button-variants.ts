@@ -6,26 +6,26 @@ export const buttonVariants = cva(
         variants: {
             variant: {
                 default:
-                    'bg-primary_blue text-xs text-gray-50 hover:bg-light_primary active:bg-dark_primary',
+                    'cursor-pointer bg-blue-500 text-xs font-bold text-gray-50 ring-blue-200 transition-all hover:ring-8 focus-visible:ring-4 active:ring-0 disabled:bg-slate-400',
                 destructive:
                     'bg-destructive text-destructive-foreground hover:bg-destructive/90',
                 outline:
                     'border-input bg-background hover:bg-accent hover:text-accent-foreground border',
                 secondary:
-                    'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+                    ' bg-blue-100 font-bold text-gray-950 ring-blue-500 hover:ring-1 active:ring-2',
                 ghost: 'hover:bg-accent hover:text-accent-foreground',
                 link: 'text-primary underline-offset-4 hover:underline',
             },
             size: {
-                default: 'h-7 px-4 py-2',
-                sm: 'h-9 rounded-md px-3',
-                lg: 'h-11 rounded-md px-8',
+                sm: 'h-7 rounded-md px-3',
+                regular: 'h-8 px-4 py-2',
+                lg: 'h-9 rounded-md px-8',
                 icon: 'h-10 w-10',
             },
         },
         defaultVariants: {
             variant: 'default',
-            size: 'default',
+            size: 'regular',
         },
     },
 );
