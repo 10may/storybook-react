@@ -1,2 +1,1 @@
-export { default as React } from './react';
-export { default as Vite } from './vite';
+export { default as SvgReactLogo } from './svg-react-logo';

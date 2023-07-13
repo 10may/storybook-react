@@ -51,5 +51,5 @@ module.exports = {
     },
 };
 
-//  npx @svgr/cli -- folder-name
+//  npx @svgr/cli -- source-folder-name
 //  npx @svgr/cli -- svg-source
