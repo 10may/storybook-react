@@ -1,7 +1,7 @@
 import { forwardRef, memo } from 'react';
 import type { Ref, SVGProps } from 'react';
 
-interface SVGRProps {
+type SVGRProps = {
     title?: string;
     titleId?: string;
     desc?: string;
