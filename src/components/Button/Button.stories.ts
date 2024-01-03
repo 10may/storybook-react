@@ -31,6 +31,12 @@ export const Disabled: Story = {
     },
 };
 
+export const Destructive: Story = {
+    args: {
+        variant: 'destructive',
+        children: 'Button',
+    },
+};
 export const Outline: Story = {
     args: {
         variant: 'outline',
